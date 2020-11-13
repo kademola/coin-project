@@ -1,7 +1,7 @@
 let coin = {
   state: 0,
   flip: function () {
-    this.state = Math.round(Math.random());
+    this.state = randomNumberZeroOrOne();
   },
 
   toString: function () {
@@ -45,3 +45,7 @@ function display20Images() {
 }
 
 display20Images();
+
+function randomNumberZeroOrOne() {
+  return Math.round(Math.random());
+}
